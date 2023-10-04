@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  font-size: 20px;
+  background-color: #2d2dc0eb;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+.checkbox-container {
+  width: 10%;
+}
+.checkbox-container input {
+  cursor: pointer;
+}
+.email {
+  width: 30%;
+}
+.name,
+.role,
+.actions {
+  width: 20%;
+}
+.name,
+.role,
+.actions,
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    width: 20%;
+  }
+  .role {
+    width: 10%;
+  }
+  .actions {
+    width: 30%;
+  }
+  .email {
+    width: 40%;
+  }
+  .header {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .name {
+    width: 20%;
+  }
+  .role {
+    width: 10%;
+  }
+  .actions {
+    width: 30%;
+  }
+  .email {
+    width: 40%;
+  }
+  .header {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .name {
+    width: 20%;
+  }
+  .role {
+    width: 10%;
+  }
+  .actions {
+    width: 25%;
+  }
+  .email {
+    width: 25%;
+  }
+  .header {
+    font-size: 12px;
+    height: 40px;
+  }
+}

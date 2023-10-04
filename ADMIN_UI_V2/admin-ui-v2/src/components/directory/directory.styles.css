@@ -1,0 +1,233 @@
+.parent-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.search-bar {
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: white;
+  padding: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  align-content: center;
+  transform: translate(-50%, -50%);
+  animation: form-visibility 0.2s forwards;
+}
+
+@keyframes form-visibility {
+  from {
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 40%;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 1000px 1000px;
+  }
+}
+
+.form-container {
+  width: 100%;
+}
+
+.from-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.from-input-container input {
+  width: 94%;
+  padding: 4px 9px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.from-input-container input:focus {
+  outline: none;
+}
+
+.form-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.form-button-container button {
+  padding: 0px;
+  height: 30px;
+  width: 75px;
+  border: 1px solid lightsteelblue;
+  border-radius: 2rem;
+  background: #cd5c5c;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.form-button-container button:hover {
+  background: #a84848;
+}
+.box-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.users-list {
+  height: 357px;
+}
+.input-field {
+  width: 98%;
+  height: 35px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.input-field:focus {
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  margin-top: 10px;
+}
+
+.delete-selected-button {
+  border: none;
+  padding: 0px;
+  background: none;
+  height: 2.5rem;
+  width: 9.5rem;
+  border: 1px solid lightsteelblue;
+  border-radius: 2rem;
+  background: #cd5c5c;
+  color: white;
+  cursor: pointer;
+}
+.delete-selected-button:hover {
+  background: #a84848;
+}
+
+.empty-list {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 500;
+  opacity: 60%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .delete-selected-button {
+    border: none;
+    padding: 0px;
+    background: none;
+    height: 38px;
+    width: 16%;
+    border: 1px solid lightsteelblue;
+    border-radius: 2rem;
+    background: #cd5c5c;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .input-field {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .delete-selected-button {
+    border: none;
+    padding: 0px;
+    background: none;
+    height: 32px;
+    width: 18%;
+    border: 1px solid lightsteelblue;
+    border-radius: 2rem;
+    background: #cd5c5c;
+    color: white;
+    cursor: pointer;
+    font-size: 11px;
+  }
+  .input-field {
+    width: 96%;
+  }
+  form {
+    background-color: white;
+    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    align-content: center;
+    transform: translate(-50%, -50%);
+    animation: form-visibility 0.2s forwards;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .delete-selected-button {
+    border: none;
+    padding: 0px;
+    background: none;
+    height: 23px;
+    width: 15%;
+    border: 1px solid lightsteelblue;
+    border-radius: 2rem;
+    background: #cd5c5c;
+    color: white;
+    cursor: pointer;
+    font-size: 6px;
+  }
+  .input-field {
+    width: 91%;
+    height: 26px;
+  }
+  form {
+    background-color: white;
+    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    align-content: center;
+    transform: translate(-50%, -50%);
+    animation: form-visibility 0.2s forwards;
+  }
+  .from-input-container {
+    margin: 10px 0;
+    margin-left: -6px;
+  }
+  .form-button-container button {
+    padding: 0px 0px;
+    height: 25px;
+    width: 75px;
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+
+    font-size: 10px;
+  }
+  .form-button-container {
+    gap: 25px;
+  }
+}

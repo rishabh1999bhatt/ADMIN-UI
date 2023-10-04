@@ -1,0 +1,146 @@
+.tile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  border-bottom: 1px solid lightblue;
+}
+
+.tile-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.selected {
+  background-color: lightgray;
+}
+
+.tile-checkbox-container {
+  width: 10%;
+}
+.tile-checkbox-container input {
+  cursor: pointer;
+}
+.user-email {
+  width: 30%;
+}
+.user-name,
+.user-role,
+.user-actions {
+  width: 20%;
+}
+.delete-button {
+  padding: 0px;
+  height: 30px;
+  width: 75px;
+  border: 1px solid lightsteelblue;
+  border-radius: 2rem;
+  background: #cd5c5c;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.delete-button:hover {
+  background: #a84848;
+}
+.edit-button {
+  padding: 0px;
+  height: 30px;
+  width: 75px;
+  border: 1px solid lightsteelblue;
+  border-radius: 2rem;
+  background: #cd5c5c;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.edit-button:hover {
+  background: #a84848;
+}
+
+@media only screen and (max-width: 1200px) {
+  .btn {
+    padding: 0px;
+    height: 30px;
+    width: 38%;
+    border: 1px solid lightsteelblue;
+    border-radius: 2rem;
+    background: #cd5c5c;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  .user-name {
+    width: 20%;
+  }
+  .user-role {
+    width: 10%;
+  }
+  .user-actions {
+    width: 30%;
+  }
+  .user-email {
+    width: 40%;
+  }
+  .tile-container {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .user-name {
+    width: 20%;
+  }
+  .user-role {
+    width: 10%;
+  }
+  .user-actions {
+    width: 30%;
+  }
+  .user-email {
+    width: 30%;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-left: 3%;
+  }
+  .tile-container {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .user-name {
+    width: 20%;
+  }
+  .user-role {
+    width: 10%;
+  }
+  .user-actions {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .user-email {
+    width: 25%;
+    overflow: hidden;
+    margin-right: 1px;
+  }
+  .tile-container {
+    font-size: 10px;
+  }
+  .btn {
+    padding: 0px;
+    height: 15px;
+    width: 66%;
+    border: 1px solid lightsteelblue;
+    border-radius: 2rem;
+    background: #cd5c5c;
+    color: white;
+    cursor: pointer;
+    font-size: 9px;
+    margin-left: 12px;
+  }
+}
